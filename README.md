@@ -14,8 +14,11 @@ The Lambda function fetches all EBS snapshots owned by the same account ('self')
 ---
 
 ## Steps for Cloud Cost Optimization
-
-### 1. **Identify Cost-Saving Opportunities**
+### 1. **Create a role with IAM policies**
+- Go to the IAM (Identity and Access Management) service in the AWS Management Console.
+- Choose the permissions by adding them to one or more IAM groups or attaching policies directly.
+- Create the role by choosing policies
+### 2. **Identify Cost-Saving Opportunities**
 - **Analyze Usage**: Use AWS Cost Explorer to identify underutilized resources.
 - **Enable Trusted Advisor**: Review Trusted Advisor’s cost optimization recommendations.
 
