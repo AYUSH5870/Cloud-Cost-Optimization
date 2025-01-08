@@ -26,22 +26,5 @@ Use Lambda functions to start and stop resources based on schedules:
 - **EC2 Instances**: Automate stopping instances during non-business hours.
 - **RDS Instances**: Use a similar approach to stop RDS databases when not in use.
   
-#### Example Lambda Code:
-```python
-import boto3
-import datetime
-
-ec2 = boto3.client('ec2')
-
-def lambda_handler(event, context):
-    current_hour = datetime.datetime.now().hour
-    
-    if 9 <= current_hour < 18:  # Business hours
-        ec2.start_instances(InstanceIds=['i-0abcdef1234567890'])
-        print("Started EC2 instances")
-    else:  # Non-business hours
-        ec2.stop_instances(InstanceIds=['i-0abcdef1234567890'])
-        print("Stopped EC2 instances")
-
 
 
