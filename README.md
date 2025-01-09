@@ -1,4 +1,4 @@
-# AWS Cloud Cost Optimization - Identifying Stale Resources
+# Cloud Cost Optimization on AWS for identifying Stale Resources
 
 ## Identifying Stale EBS Snapshots
 
