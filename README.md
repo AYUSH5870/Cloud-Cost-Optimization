@@ -40,9 +40,14 @@ Use Lambda functions to start and stop resources based on schedules:
 
 #### 4. **Create Lambda Functions**
 Create Lambda functions to identify and delete unused resources:
+
+![sucessfully deplloyed LAMBDA FUNC TO DELETE STALE SNAPSHOTS WITH NO VOL N INSTANCE](https://github.com/user-attachments/assets/e92dac5d-7977-4345-a776-97f028fc47c5)
+
 - Detect unattached EBS volumes and delete them.
 - Identify and release unused Elastic IPs.
 - Schedule Lambda functions to stop unused EC2 instances during off-peak hours and restart them when required.
+  
+![Snapshot](https://github.com/user-attachments/assets/9694cb54-4dbe-4a76-ba9a-5ababd47865f)
 
 #### 5. **Automate Cost Reporting**
 - Use Lambda to fetch cost data from AWS Cost Explorer or AWS Billing and Cost Management APIs.
@@ -55,6 +60,9 @@ Create Lambda functions to identify and delete unused resources:
 #### 7. **Evaluate and Iterate**
 - Regularly review and update Lambda functions based on resource usage patterns.
 - Utilize reports and feedback to refine optimization strategies.
+
+  ![SNAPSHOT DELETED](https://github.com/user-attachments/assets/88230de9-a207-424a-93a1-6fbdb923e08a)
+
   
 
   
